@@ -7,11 +7,10 @@ html(lang="en")
         link(rel="stylesheet", href="css/style.min.css")
         block ceo 
     body
-        .wrapper 
+        .wrapper(data-barba="wrapper")  
             include header 
             +header 
-            main.main  
-                block content 
+            block content 
             include footer 
             +footer 
         script(src="js/app.min.js")  
