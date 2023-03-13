@@ -1,1 +1,268 @@
-// Футер
+.footer{
+    background-color: #1D1F20;
+    .container{
+        padding: 100px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &-text{
+        width: 463px;
+        p{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 21px;
+            line-height: 27px;
+            color: #FFFFFF;
+            margin-bottom: 9px;
+            &:last-child{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 96px;
+                line-height: 94px;
+                color: #E1A346;
+                margin-bottom: 0;
+            }
+        }
+    }
+    &-form{
+        max-width: calc(100% - 463px);
+        width: 100%;
+        padding-left: 100px;
+        display: flex;
+        form{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+    &-input:focus ~ &-label{
+        transform: translateY(-150%);
+        font-size: 14px;
+    }
+    &-input.active ~ &-label{
+        transform: translateY(-150%);
+        font-size: 14px;
+    }
+    &-top{
+        width: calc(50% - 12px);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative;
+        input{
+            width: 100%;
+            height: 50px;
+            background-color: transparent;
+            border: 0;
+            color: white;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 21px;
+            line-height: 27px;
+            border-bottom: 1px solid white;
+            &:focus{
+                caret-color: white;
+            }
+        }
+    }
+    &-label{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        z-index: 1;
+        color: white;
+        pointer-events: none;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 27px;
+        transition: .5s all ease-in-out;
+    }
+    &-aboutus{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative;
+        margin-top: 35px;
+        input{
+            width: 100%;
+            height: 50px;
+            background-color: transparent;
+            border: 0;
+            color: white;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 21px;
+            line-height: 27px;
+            border-bottom: 1px solid white;
+            &:focus{
+                caret-color: white;
+            }
+        }
+        .counter{
+            color: white;
+            opacity: .6;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            position: absolute;
+            bottom: -35px;
+            right: 0;
+        }
+    }
+    .currencies{
+        width: 100%;
+        color: white;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 27px;
+        margin-top: 50px;
+    }
+    .list{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 16px;
+        margin-top: 24px;
+        width: 100%;
+        label{
+            position: relative;
+            .checkbox{
+                color: white;
+                padding: 7px 16px;
+                background-color: #272727;
+                border-radius: 20px;
+                line-height: 18px;
+                transition: .4s all;
+                &:hover{
+                    opacity: .6;
+                }
+                cursor: pointer;
+            }
+            .currencies-btn{
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                &:checked ~ .checkbox{
+                    background-color: #E1A346;
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    .attach{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        gap: 12px;
+        align-items: center;
+        position: relative;
+        margin-top: 24px;
+        p{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 21px;
+            line-height: 27px;
+            color: white;
+        }
+        input{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            opacity: 0;
+        }
+    }
+    .privacy{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 50px;
+        gap: 19px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        input{
+            position: absolute;
+            left: 3.5px;
+            z-index: -1;
+        }
+        input[name="privacy"]:checked ~ .privacy-checkmark{
+            border-color: #E1A346;
+            span{
+                background-color: #E1A346;
+            }
+        }
+        .privacy-checkmark{
+            width: 20px;
+            height: 20px;
+            background-color: transparent;
+            border: 1px solid #D9D9D9;
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            span{
+                width: 13px;
+                height: 13px;
+                background-color: transparent;
+            }
+        }
+        p{
+            color: white;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            position: relative;
+            top: 1px;
+            border-radius: 0;
+            background-color: transparent;
+            a{
+                color: #E1A346;
+            }
+        }
+    }
+    .submit{
+        position: relative;
+        margin-top: 33px;
+        input{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 13px;
+            padding: 12px 30px;
+            background-color: #DF972C;
+            border-radius: 80px;
+            p{
+                color: white;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
