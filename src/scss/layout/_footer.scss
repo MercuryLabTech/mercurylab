@@ -246,13 +246,6 @@
     .submit{
         position: relative;
         margin-top: 33px;
-        input{
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-        }
         button{
             display: flex;
             justify-content: center;
