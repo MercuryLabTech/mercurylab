@@ -170,6 +170,10 @@
           justify-content: space-between;
 }
 
+.footer-form form:invalid .submit button {
+  opacity: 0.6;
+}
+
 .footer-input:focus ~ .footer-label {
   -webkit-transform: translateY(-150%);
       -ms-transform: translateY(-150%);
@@ -477,6 +481,9 @@
   padding: 12px 30px;
   background-color: #DF972C;
   border-radius: 80px;
+  -webkit-transition: 0.3s opacity;
+  -o-transition: 0.3s opacity;
+  transition: 0.3s opacity;
 }
 
 .footer .submit button p {
@@ -487,6 +494,8 @@
   line-height: 19px;
   text-align: center;
   text-transform: uppercase;
+  position: relative;
+  top: 2px;
 }
 
 :root {
@@ -503,11 +512,22 @@
   font-family: var(--font-1);
   -ms-scroll-chaining: none;
       overscroll-behavior: none;
+  caret-color: transparent;
 }
 
 *:focus,
 *:active {
   outline: none;
+}
+
+*::-moz-selection {
+  color: white;
+  background-color: #E1A346;
+}
+
+*::selection {
+  color: white;
+  background-color: #E1A346;
 }
 
 html,
