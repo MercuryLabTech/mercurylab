@@ -1,10 +1,14 @@
 // Тема по умолчанию
+:root{
+    --font-1: 'Mont', sans-serif;
+    --font-2: 'Syne', sans-serif;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
-    font-family: sans-serif;
+    font-family: var(--font-1);
     &:focus,
     &:active{
         outline: none;
