@@ -5,27 +5,12 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="css/style.min.css")
-<<<<<<< HEAD
         block ceo
     body
-        .wrapper(data-barba="wrapper")
+        .wrapper(data-barba="wrapper" data-scroll data-scroll-speed="2")
             include header
             +header
-            block content
-            include footer
-            +footer
-        script(type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js") 
-        script(type="text/javascript" src="js/app.min.js")
-=======
-        block ceo 
-    body(data-scroll data-scroll-speed="2")
-        .wrapper(data-barba="wrapper")  
-            include header 
-            +header 
             block content 
-            include moreCases
-            +moreCases
-            include footer 
+            include footer
             +footer 
-        script(src="js/app.min.js")  
->>>>>>> 2a3db267567757b589505a5776b99e43e92f7098
+        script(type="text/javascript" src="js/app.min.js")

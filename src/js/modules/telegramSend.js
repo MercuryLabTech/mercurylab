@@ -1,3 +1,5 @@
+import $ from 'jquery'
+
 export function init() {
     $('.footer-form__form').on('submit', function (event) {
 
@@ -45,8 +47,19 @@ export function init() {
                         if ( e.lengthComputable ) {
                             let percentage = ( e.loaded / e.total ) * 100;
                                 percentage = percentage.toFixed(0);
-                            $('.submit', form)
-                                .html( percentage + '%' );
+                            if(percentage < 100) {
+                                $('.footer-form__form', form).addClass('invalid');
+                                $('.submit-text', form)
+                                .html( percentage + '%' ); 
+                            } else {
+                                $('.submit-text', form)
+                                    .html( $('.submit-text').attr('data-thanks') );
+                                setTimeout(() => {
+                                    $('.submit-text', form)
+                                        .html( $('.submit-text').attr('data-text') );
+                                        $('.footer-form__form', form).removeClass('invalid');
+                                }, 5000);
+                            }
                         }
                     }, false );
                 }

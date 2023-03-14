@@ -274,21 +274,22 @@
           justify-content: space-between;
 }
 
+.footer-form form.invalid .submit button,
 .footer-form form:invalid .submit button {
   opacity: 0.6;
 }
 
 .footer-input:focus ~ .footer-label {
-  -webkit-transform: translateY(-150%);
-      -ms-transform: translateY(-150%);
-          transform: translateY(-150%);
+  -webkit-transform: translateY(-170%);
+      -ms-transform: translateY(-170%);
+          transform: translateY(-170%);
   font-size: 14px;
 }
 
 .footer-input.active ~ .footer-label {
-  -webkit-transform: translateY(-150%);
-      -ms-transform: translateY(-150%);
-          transform: translateY(-150%);
+  -webkit-transform: translateY(-170%);
+      -ms-transform: translateY(-170%);
+          transform: translateY(-170%);
   font-size: 14px;
 }
 
