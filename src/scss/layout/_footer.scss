@@ -46,11 +46,11 @@
     }
 
     &-input:focus ~ &-label{
-        transform: translateY(-170%);
+        transform: translateY(-160%);
         font-size: 14px;
     }
     &-input.active ~ &-label{
-        transform: translateY(-170%);
+        transform: translateY(-160%);
         font-size: 14px;
     }
     &-top{
