@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230315003027">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230315003531">
     <title>Works </title>
   </head>
   <body>
@@ -43,6 +43,7 @@
                 </div>
                 <div class="footer-form"> 
                   <form class="footer-form__form"> 
+                    <input class="footer-price" type="hidden" name="price" value="">
                     <div class="footer-top"> 
                       <input class="footer-input" type="text" name="name" autoComplete="off" required id="fname">
                       <label class="footer-label" for="fname">Your name </label>
@@ -60,25 +61,25 @@
                     <ul class="list">
                       <li>
                         <label>
-                          <input class="currencies-btn" type="radio" name="currencies" required>
+                          <input class="currencies-btn" type="radio" name="currencies" required data-text="Less than $1000">
                           <p class="checkbox">Less than $1000</p>
                         </label>
                       </li>
                       <li>
                         <label>
-                          <input class="currencies-btn" type="radio" name="currencies" required>
+                          <input class="currencies-btn" type="radio" name="currencies" required data-text="1K-10K">
                           <p class="checkbox">1K-10K</p>
                         </label>
                       </li>
                       <li>
                         <label>
-                          <input class="currencies-btn" type="radio" name="currencies" required>
+                          <input class="currencies-btn" type="radio" name="currencies" required data-text="More than 50K">
                           <p class="checkbox">More than 50K</p>
                         </label>
                       </li>
                       <li>
                         <label>
-                          <input class="currencies-btn" type="radio" name="currencies" required>
+                          <input class="currencies-btn" type="radio" name="currencies" required data-text="No determined">
                           <p class="checkbox">No determined</p>
                         </label>
                       </li>
@@ -100,6 +101,6 @@
               </div>
             </footer>
     </div>
-    <script type="text/javascript" src="js/app.min.js?_v=20230315003027"></script>
+    <script type="text/javascript" src="js/app.min.js?_v=20230315003531"></script>
   </body>
 </html>

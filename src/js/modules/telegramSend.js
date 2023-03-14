@@ -18,7 +18,7 @@ export function init() {
         data.append( 'Имя', 		$('[name="name"]', form).val() );
         data.append( 'Телефон',     $('[name="phone"]', form).val() );
         data.append( 'Текст', 		$('[name="text"]', form).val() ); 
-        data.append( 'Цена', 		$('[name="currencies"]', form).val() );
+        data.append( 'Цена', 		$('[name="price"]', form).val() );
     
         files.each(function (key, file) { 
             let cont = file.files;

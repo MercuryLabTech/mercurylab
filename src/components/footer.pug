@@ -6,6 +6,7 @@ mixin footer()
                 p.sf Let’s get in touch 
             .footer-form 
                 form.footer-form__form  
+                    input(type="hidden" name="price" value="").footer-price 
                     .footer-top  
                         input(type="text" name="name" autoComplete="off" required id="fname").footer-input 
                         label(for="fname").footer-label Your name 
@@ -20,19 +21,19 @@ mixin footer()
                     ul.list
                         li
                             label
-                                input(type="radio" name="currencies" required).currencies-btn
+                                input(type="radio" name="currencies" required data-text="Less than $1000").currencies-btn
                                 p.checkbox Less than $1000
                         li
                             label
-                                input(type="radio" name="currencies" required).currencies-btn
+                                input(type="radio" name="currencies" required data-text="1K-10K").currencies-btn
                                 p.checkbox 1K-10K
                         li
                             label
-                                input(type="radio" name="currencies" required).currencies-btn
+                                input(type="radio" name="currencies" required data-text="More than 50K").currencies-btn
                                 p.checkbox More than 50K
                         li
                             label
-                                input(type="radio" name="currencies" required).currencies-btn
+                                input(type="radio" name="currencies" required data-text="No determined").currencies-btn
                                 p.checkbox No determined
                     label.privacy 
                         input(required type="checkbox" name="privacy")
