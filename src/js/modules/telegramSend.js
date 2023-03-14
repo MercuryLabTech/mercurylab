@@ -15,14 +15,14 @@ export function init() {
         $('.submit-text', form).val('Отправка...');
         $('input, textarea', form).attr('disabled','');
     
-        data.append( 'Имя: ', 		$('[name="name"]', form).val() );
-        data.append( 'Телефон: ', 		$('[name="phone"]', form).val() );
-        data.append( 'О проекте: ', 		$('[name="text"]', form).val() );
-        data.append( 'Цена: ', 		$('[name="currencies"]', form).val() );
+        data.append( 'Имя', 		$('[name="name"]', form).val() );
+        data.append( 'Телефон', 		$('[name="phone"]', form).val() );
+        data.append( 'Текст', 		$('[name="text"]', form).val() ); 
+        data.append( 'Цена', 		$('[name="currencies"]', form).val() );
         // data.append( 'file', 		$('[name="file"]', form).val() );
        
     
-        files.each(function (key, file) {
+        files.each(function (key, file) { 
             let cont = file.files;
             if ( cont ) {
                 $.each( cont, function( key, value ) {

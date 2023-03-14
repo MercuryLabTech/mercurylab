@@ -595,6 +595,183 @@
   top: 2px;
 }
 
+.no-webp .price {
+  background: -webkit-gradient(linear, left bottom, left top, from(#F5F5F5), to(#F5F5F5)), url(.png), #F7F6F5;
+  background: -o-linear-gradient(bottom, #F5F5F5, #F5F5F5), url(.png), #F7F6F5;
+  background: linear-gradient(0deg, #F5F5F5, #F5F5F5), url(.png), #F7F6F5; }
+
+.price {
+  height: 100vh;
+  padding-top: 125px;
+  padding-bottom: 125px;
+}
+
+.price__title {
+  font-family: var(--font-2);
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  text-transform: uppercase;
+  color: #191B1D;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.price__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+
+.price__card {
+  width: calc(33.333% - 16px);
+  padding: 54px 26px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 14px 54px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 14px 54px rgba(0, 0, 0, 0.15);
+  border-radius: 40px;
+}
+
+.price__card.active {
+  background: #DF972C;
+  border: 2px solid #FFFFFF;
+  -webkit-box-shadow: 0px 14px 54px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 14px 54px rgba(0, 0, 0, 0.15);
+  border-radius: 40px;
+}
+
+.price__card.active .price__subtitle,
+.price__card.active .price__desc,
+.price__card.active .price__li {
+  color: #FFFFFF;
+}
+
+.price__card.active .price__p {
+  color: #fff;
+  opacity: 0.6;
+}
+
+.price__card.active .price__btn {
+  background: #fff;
+  color: #000000;
+}
+
+.price__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 48px;
+}
+
+.price__img {
+  margin-right: 15px;
+}
+
+.price__subtitle {
+  font-family: var(--font-2);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: uppercase;
+  color: #191B1D;
+  margin-bottom: 5px;
+  white-space: nowrap;
+}
+
+.price__desc {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  color: #191B1D;
+}
+
+.price__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 24px;
+  margin-bottom: 32px;
+}
+
+.price__li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.price__li svg {
+  min-width: 32px;
+  width: 32px;
+}
+
+.price__p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #9D9D9D;
+  margin-bottom: 32px;
+}
+
+.price__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  padding: 12px 30px;
+  width: 271px;
+  height: 56px;
+  background: #DF972C;
+  border-radius: 80px;
+  font-family: var(--font-2);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 :root {
   --font-1: "Mont", sans-serif;
   --font-2: "Syne", sans-serif;
@@ -692,3 +869,5 @@ ul {
     max-width: 1320px;
   }
 }
+
+.webp .price { background: -webkit-gradient(linear, left bottom, left top, from(#F5F5F5), to(#F5F5F5)), url(.webp), #F7F6F5; background: -o-linear-gradient(bottom, #F5F5F5, #F5F5F5), url(.webp), #F7F6F5; background: linear-gradient(0deg, #F5F5F5, #F5F5F5), url(.webp), #F7F6F5; }
