@@ -280,16 +280,16 @@
 }
 
 .footer-input:focus ~ .footer-label {
-  -webkit-transform: translateY(-170%);
-      -ms-transform: translateY(-170%);
-          transform: translateY(-170%);
+  -webkit-transform: translateY(-160%);
+      -ms-transform: translateY(-160%);
+          transform: translateY(-160%);
   font-size: 14px;
 }
 
 .footer-input.active ~ .footer-label {
-  -webkit-transform: translateY(-170%);
-      -ms-transform: translateY(-170%);
-          transform: translateY(-170%);
+  -webkit-transform: translateY(-160%);
+      -ms-transform: translateY(-160%);
+          transform: translateY(-160%);
   font-size: 14px;
 }
 

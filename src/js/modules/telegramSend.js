@@ -52,13 +52,14 @@ export function init() {
                                 $('.submit-text', form)
                                 .html( percentage + '%' ); 
                             } else {
-                                $('.submit-text', form)
-                                    .html( $('.submit-text').attr('data-thanks') );
-                                setTimeout(() => {
-                                    $('.submit-text', form)
-                                        .html( $('.submit-text').attr('data-text') );
-                                        $('.footer-form__form', form).removeClass('invalid');
-                                }, 5000);
+                                window.location.reload();
+                                // $('.submit-text', form)
+                                //     .html( $('.submit-text').attr('data-thanks') );
+                                // setTimeout(() => {
+                                //     $('.submit-text', form)
+                                //         .html( $('.submit-text').attr('data-text') );
+                                //         $('.footer-form__form', form).removeClass('invalid');
+                                // }, 5000);
                             }
                         }
                     }, false );
