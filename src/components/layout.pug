@@ -6,14 +6,11 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="css/style.min.css")
         block ceo
-    body(data-scroll)
-        .wrapper(data-barba="wrapper")
+    body
+        .wrapper(data-barba="wrapper" data-scroll)
             include header
             +header
-            block content
-            include moreCases
-            +moreCases
+            block content 
             include footer
-            +footer
-        script(type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js") 
+            +footer 
         script(type="text/javascript" src="js/app.min.js")
