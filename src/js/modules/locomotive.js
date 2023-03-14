@@ -6,5 +6,5 @@ const scroll = new LocomotiveScroll({
     multiplier: 0.5,
     smartphone: {
         smooth: true
-    }
+    },
 });
