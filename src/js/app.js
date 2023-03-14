@@ -2,12 +2,14 @@ import barba from '@barba/core';
 
 // modules
 import * as functions from "./modules/functions.js";
+import * as telegramSend from "./modules/telegramSend.js";
 
 // components
 import * as footer from "./components/footer.js";
 
 // modules
 functions.isWebp();
+telegramSend.init();
 
 // components
 footer.init();
