@@ -15,11 +15,11 @@ export function init() {
         $('.submit-text', form).val('Отправка...');
         $('input, textarea', form).attr('disabled','');
     
-        data.append( 'name', 		$('[name="name"]', form).val() );
-        data.append( 'phone', 		$('[name="phone"]', form).val() );
-        data.append( 'text', 		$('[name="text"]', form).val() );
-        data.append( 'price', 		$('[name="currencies"]', form).val() );
-        data.append( 'file', 		$('[name="file"]', form).val() );
+        data.append( 'Имя: ', 		$('[name="name"]', form).val() );
+        data.append( 'Телефон: ', 		$('[name="phone"]', form).val() );
+        data.append( 'О проекте: ', 		$('[name="text"]', form).val() );
+        data.append( 'Цена: ', 		$('[name="currencies"]', form).val() );
+        // data.append( 'file', 		$('[name="file"]', form).val() );
        
     
         files.each(function (key, file) {
