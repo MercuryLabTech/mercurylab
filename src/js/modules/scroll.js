@@ -1,12 +1,11 @@
-import LocomotiveScroll from 'locomotive-scroll';
+import SmoothScroll from "smoothscroll-for-websites";
 
 export function init() {
-    // const scroll = new LocomotiveScroll({
-    //     el: document.querySelector('body'),
-    //     smooth: true,
-    //     multiplier: 0.5,
-    //     smartphone: {
-    //         smooth: true
-    //     },
-    // }); 
+    SmoothScroll({
+        animationTime: 600,
+        stepSize: 60,
+        keyboardSupport: true,
+        arrowScroll: 100,
+        touchpadSupport: true,
+    });
 }
