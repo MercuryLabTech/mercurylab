@@ -132,9 +132,8 @@
 
 .morecases-title {
   max-width: 490px;
-  position: absolute;
-  top: 92px;
-  right: 15px;
+  position: relative;
+  bottom: 92px;
 }
 
 .morecases-title h2 {
@@ -156,12 +155,26 @@
   margin-top: 16px;
 }
 
-.morecases .case {
-  width: calc(50% - 64px);
+.morecases-left {
+  width: 50%;
 }
 
-.morecases .case-2 {
-  margin-top: 170px;
+.morecases-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 50%;
+}
+
+.morecases .case {
+  width: calc(100% - 64px);
 }
 
 .morecases .case-img {
