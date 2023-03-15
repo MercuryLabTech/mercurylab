@@ -11,9 +11,8 @@
     }
     &-title{
         max-width: 490px;
-        position: absolute;
-        top: 92px;
-        right: 15px;
+        position: relative;
+        bottom: 92px;
         h2{
             font-style: normal;
             font-weight: 700;
@@ -32,12 +31,21 @@
             margin-top: 16px;
         }
     }
+    &-left{
+        width: 50%;
+    }
+    &-right{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 50%;
+    }
     .case{
-        width: calc(50% - 64px);
+        width: calc(100% - 64px);
         // background-color: red;
-        &-2{
-            margin-top: 170px;
-        }
+        // &-2{
+        //     margin-top: 170px;
+        // }
         &-img{
             width: 100%;
             aspect-ratio: 1.7/1;

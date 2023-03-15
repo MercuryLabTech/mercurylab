@@ -12,7 +12,7 @@ export function init() {
             ease: "power4",
         })
         anim.pause()
-        el.addEventListener('mouseenter', () => {   
+        el.addEventListener('mouseenter', () => { 
             t = el;
             anim.play()
         })
