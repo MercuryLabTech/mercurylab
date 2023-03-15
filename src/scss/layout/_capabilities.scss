@@ -2,7 +2,9 @@
     height: max-content;
     padding-top: 100px;
     padding-bottom: 100px;
-    background: #000;
+    background-image: url(../../img/noise-black.webp);
+    background-size: cover;
+    background-repeat: repeat;
     &__body{
         display: flex;
         justify-content: space-between;
@@ -29,10 +31,10 @@
     }
     &__img{
         &:nth-of-type(1){
-            transform: translateX(81px);
+            margin-right: -60px;
         }
         &:nth-of-type(3){
-            transform: translateX(-81px);
+            margin-left: -60px;
         }
     }
     &__right{
@@ -45,8 +47,10 @@
     }
     .accordion{
         width: 100%;
-        &:not(:last-of-type){
-            margin-bottom: 24px;
+        &+.accordion{
+            .accordion__button{
+                padding-top: 24px;
+            }
         }
         &__button{
             color: #fff;
