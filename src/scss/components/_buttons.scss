@@ -1,1 +1,23 @@
 //Кнопки
+.btn-anim{
+    display: flex; 
+    flex-direction: column; 
+    height: 20px; 
+    overflow: hidden; 
+    &__p{
+        will-change: transform;
+        transition: transform 300ms ease;
+        min-height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        *{
+            min-height: 20px;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            will-change: transform;
+        }
+    }
+}

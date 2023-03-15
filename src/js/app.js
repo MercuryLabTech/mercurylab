@@ -5,6 +5,7 @@ import gsap from 'gsap';
 import * as functions from "./modules/functions.js";
 import * as telegramSend from "./modules/telegramSend.js";
 import * as scroll from "./modules/scroll.js";
+import * as animation from "./modules/animations.js";
 
 // components
 import * as footer from "./components/footer.js";
@@ -13,6 +14,7 @@ import * as popup from "./components/popup.js";
 // modules
 functions.isWebp();
 scroll.init();
+animation.init();
 telegramSend.init();
 
 // components
