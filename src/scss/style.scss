@@ -1,4 +1,8 @@
 // Главный Sass файл
+@import 
+    "../../node_modules/swiper/swiper.scss";
+    // "../../node_modules/swiper/modules/pagination/pagination.scss",
+    // "../../node_modules/swiper/modules/navigation/navigation.scss";
 
 // Шрифты
 @import "fonts";
@@ -12,6 +16,7 @@
 
 // vendors
 // @import 'vendors/bootstrap'
+
 
 // base
 @import 
@@ -29,6 +34,7 @@
     'layout/price',
     'layout/thanks',
     'layout/capabilities',
+    'layout/reviews',
     'layout/forms';
 
 // components

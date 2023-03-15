@@ -11,6 +11,7 @@ import * as animation from "./modules/animations.js";
 // components
 import * as footer from "./components/footer.js";
 import * as popup from "./components/popup.js";
+import * as reviews from "./components/reviews.js"
 
 // modules
 functions.isWebp();
@@ -21,6 +22,7 @@ telegramSend.init();
 // components
 footer.init();
 popup.init();
+reviews.init();
 
 $(document).ready(function() {
     $(".accordion > .accordion__button").on("click", function() {
