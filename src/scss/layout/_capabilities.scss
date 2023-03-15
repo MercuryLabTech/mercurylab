@@ -1,0 +1,91 @@
+.capabilities{
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    background: #000;
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        column-gap: 76px;
+    }
+    &__left{
+        width: max-content;
+    }
+    &__title{
+        font-family: var(--font-2);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 64px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 110px;
+    }
+    &__images{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__img{
+        &:nth-of-type(1){
+            transform: translateX(81px);
+        }
+        &:nth-of-type(3){
+            transform: translateX(-81px);
+        }
+    }
+    &__right{
+        max-width: 592px;
+        width: 100%;
+    }
+    &__accordion{
+        padding-top: 55px;
+        width: 100%;
+    }
+    .accordion{
+        width: 100%;
+        &:not(:last-of-type){
+            margin-bottom: 24px;
+        }
+        &__button{
+            color: #fff;
+            font-family: var(--font-2);
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 64px;
+            padding-bottom: 12px;
+            border-bottom: 0.5px solid #BDBDBD;
+            width: 100%;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &.active{
+                svg{
+                    display: none;
+                    &.active{
+                        display: block;
+                    }
+                }
+            }
+            svg{
+                &.active{
+                    display: none;
+                }
+            }
+        }
+        &__content{
+            padding-top: 24px;
+        }
+        &__p{
+            color: #fff;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}

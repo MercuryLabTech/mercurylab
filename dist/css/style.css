@@ -905,6 +905,136 @@
   font-size: 24px;
 }
 
+.capabilities {
+  min-height: 100vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding-top: 160px;
+  padding-bottom: 160px;
+  background: #000;
+}
+
+.capabilities__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 76px;
+     -moz-column-gap: 76px;
+          column-gap: 76px;
+}
+
+.capabilities__left {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.capabilities__title {
+  font-family: var(--font-2);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 110px;
+}
+
+.capabilities__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.capabilities__img:nth-of-type(1) {
+  -webkit-transform: translateX(81px);
+      -ms-transform: translateX(81px);
+          transform: translateX(81px);
+}
+
+.capabilities__img:nth-of-type(3) {
+  -webkit-transform: translateX(-81px);
+      -ms-transform: translateX(-81px);
+          transform: translateX(-81px);
+}
+
+.capabilities__right {
+  max-width: 592px;
+  width: 100%;
+}
+
+.capabilities__accordion {
+  padding-top: 55px;
+  width: 100%;
+}
+
+.capabilities .accordion {
+  width: 100%;
+}
+
+.capabilities .accordion:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+
+.capabilities .accordion__button {
+  color: #fff;
+  font-family: var(--font-2);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 64px;
+  padding-bottom: 12px;
+  border-bottom: 0.5px solid #BDBDBD;
+  width: 100%;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.capabilities .accordion__button.active svg {
+  display: none;
+}
+
+.capabilities .accordion__button.active svg.active {
+  display: block;
+}
+
+.capabilities .accordion__button svg.active {
+  display: none;
+}
+
+.capabilities .accordion__content {
+  padding-top: 24px;
+}
+
+.capabilities .accordion__p {
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .btn-anim {
   display: -webkit-box;
   display: -ms-flexbox;
