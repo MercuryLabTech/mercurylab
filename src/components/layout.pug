@@ -8,9 +8,17 @@ html(lang="en")
         block ceo
     body
         .wrapper(data-barba="wrapper" data-scroll)
+            .transition 
+                li 
+                li 
+                li 
+                li 
+                li 
             include header
             +header
             block content 
+            include thanks 
+            +thanks  
             include footer
             +footer 
         script(type="text/javascript" src="js/app.min.js")
