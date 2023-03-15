@@ -246,6 +246,10 @@
   max-width: 1110px;
 }
 
+.header__logo {
+  line-height: 0;
+}
+
 .header__list {
   display: -webkit-box;
   display: -ms-flexbox;

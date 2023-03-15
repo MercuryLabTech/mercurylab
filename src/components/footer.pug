@@ -6,6 +6,7 @@ mixin footer()
                 p.sf Let’s get in touch 
             .footer-form 
                 form.footer-form__form  
+                    input(type="hidden" name="formid" value="footer")
                     input(type="hidden" name="price" value="").footer-price 
                     .footer-top  
                         input(type="text" name="name" autoComplete="off" required id="fname").footer-input 

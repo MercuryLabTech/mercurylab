@@ -19,6 +19,9 @@
         padding: 20px 60px;
         max-width: 1110px;
     }
+    &__logo{
+        line-height: 0;
+    }
     &__list{
         display: flex;
         align-items: center;
