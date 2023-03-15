@@ -47,6 +47,7 @@
     "@barba/core": "^2.9.7",
     "gsap": "^3.11.4",
     "jquery": "^3.6.4",
-    "locomotive-scroll": "^4.1.4"
+    "locomotive-scroll": "^4.1.4",
+    "smoothscroll-for-websites": "^1.4.10"
   }
 }

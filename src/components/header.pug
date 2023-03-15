@@ -1,8 +1,27 @@
 mixin header
     header.header 
         .container 
-            ul 
-                li 
-                    a(href="index.html") home 
-                li 
-                    a(href="works.html") works  
+            .header__nav
+                a(href="index.html").header__logo 
+                    img(src="@img/logo.svg", alt="" draggable="false") 
+                ul.header__list 
+                    li.header__li 
+                        a(href="index.html").header__link.btn-anim
+                            p.btn-anim__p HOME
+                            p.btn-anim__p HOME
+                    li.header__li 
+                        a(href="works.html").header__link.btn-anim 
+                            p.btn-anim__p WORK
+                            p.btn-anim__p WORK
+                    li.header__li 
+                        a(href="blog.html").header__link.btn-anim 
+                            p.btn-anim__p BLOG
+                            p.btn-anim__p BLOG
+                    li.header__li 
+                        a(href="contact.html").header__link.btn-anim 
+                            p.btn-anim__p CONTACT US 
+                            p.btn-anim__p CONTACT US 
+                button(type="button").open-popup.header__button 
+                    .btn-anim 
+                        p.btn-anim__p Order a service
+                        p.btn-anim__p Order a service

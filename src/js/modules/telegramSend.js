@@ -15,14 +15,13 @@ export function init() {
         $('.submit-text', form).val('Отправка...');
         $('input, textarea', form).attr('disabled','');
     
-        data.append( 'Имя: ', 		$('[name="name"]', form).val() );
-        data.append( 'Телефон: ', 		$('[name="phone"]', form).val() );
-        data.append( 'О проекте: ', 		$('[name="text"]', form).val() );
-        data.append( 'Цена: ', 		$('[name="currencies"]', form).val() );
-        // data.append( 'file', 		$('[name="file"]', form).val() );
-       
+        data.append( 'Имя', 		$('[name="name"]', form).val() );
+        data.append( 'Телефон',     $('[name="phone"]', form).val() );
+        data.append( 'Текст', 		$('[name="text"]', form).val() ); 
+        data.append( 'Цена', 		$('[name="price"]', form).val() );
+        data.append( 'Форма', 		$('[name="formid"]', form).val() );
     
-        files.each(function (key, file) {
+        files.each(function (key, file) { 
             let cont = file.files;
             if ( cont ) {
                 $.each( cont, function( key, value ) {
@@ -47,23 +46,12 @@ export function init() {
                         if ( e.lengthComputable ) {
                             let percentage = ( e.loaded / e.total ) * 100;
                                 percentage = percentage.toFixed(0);
-                            if(percentage < 100) {
                                 $('.footer-form__form', form).addClass('invalid');
                                 $('.submit-text', form)
                                 .html( percentage + '%' ); 
-                            } else {
-                                window.location.reload();
-                                // $('.submit-text', form)
-                                //     .html( $('.submit-text').attr('data-thanks') );
-                                // setTimeout(() => {
-                                //     $('.submit-text', form)
-                                //         .html( $('.submit-text').attr('data-text') );
-                                //         $('.footer-form__form', form).removeClass('invalid');
-                                // }, 5000);
-                            }
                         }
                     }, false );
-                }
+                } 
     
                 return myXhr;
             },
@@ -71,8 +59,16 @@ export function init() {
                 // Тут выводим ошибку
             },
             complete: function() {
-                // Тут можем что-то делать ПОСЛЕ успешной отправки формы
-                console.log('Complete')
+                document.querySelectorAll('.footer input').forEach(el => {
+                    el.classList.remove('active');
+                    el.removeAttribute('disabled');
+                })
+                if(document.querySelector('.popup#thanks')){
+                    document.querySelector('.popup#thanks').classList.add('active');
+                }
+                $('.submit-text', form)
+                    .html( $('.submit-text').attr('data-text') );
+                $('.footer-form__form', form).removeClass('invalid');
                 form.reset() 
             }
         });
