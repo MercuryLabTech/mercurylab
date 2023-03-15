@@ -984,8 +984,8 @@
   width: 100%;
 }
 
-.capabilities .accordion:not(:last-of-type) {
-  margin-bottom: 24px;
+.capabilities .accordion + .accordion .accordion__button {
+  padding-top: 24px;
 }
 
 .capabilities .accordion__button {

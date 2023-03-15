@@ -45,8 +45,10 @@
     }
     .accordion{
         width: 100%;
-        &:not(:last-of-type){
-            margin-bottom: 24px;
+        &+.accordion{
+            .accordion__button{
+                padding-top: 24px;
+            }
         }
         &__button{
             color: #fff;
