@@ -25,6 +25,9 @@ html, body{
 } 
 .sf{
     font-family: var(--font-2);
+    *{
+        font-family: var(--font-2);
+    }
 }
 .transition{
     display: flex;

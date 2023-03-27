@@ -1522,6 +1522,10 @@ body {
   font-family: var(--font-2);
 }
 
+.sf * {
+  font-family: var(--font-2);
+}
+
 .transition {
   display: -webkit-box;
   display: -ms-flexbox;
