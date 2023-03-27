@@ -22,25 +22,34 @@ function delay(n) {
     })
 }
 
+function afterEnterMenu() {
+    menu.init()
+    setTimeout(() => {
+        document.querySelector('.header').classList.remove('hide');    
+    }, 200);
+}
+
 barba.init({
     sync: true,
     views: [
         {
             namespace: 'home',
             beforeEnter() {
+                window.scrollTo(0, 0)
                 reviews.init()
                 accordion.init()
             },
             afterEnter() {
-                menu.init()
+                afterEnterMenu()
             }
         },
         {
             namespace: 'works',
             beforeEnter() {
+                window.scrollTo(0, 0)
             },
             afterEnter() {
-                menu.init()
+                afterEnterMenu()
             }
         },
     ],

@@ -7,6 +7,10 @@
     height: 90px;
     display: flex;
     z-index: 50;
+    transition: 300ms ease;
+    &.hide{
+        transform: translateY(calc(-100% - 51px));
+    }
     &__nav{
         background: #000;
         border-radius: 94px;

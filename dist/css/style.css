@@ -458,6 +458,15 @@
   display: -ms-flexbox;
   display: flex;
   z-index: 50;
+  -webkit-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.header.hide {
+  -webkit-transform: translateY(calc(-100% - 51px));
+      -ms-transform: translateY(calc(-100% - 51px));
+          transform: translateY(calc(-100% - 51px));
 }
 
 .header__nav {
@@ -1495,7 +1504,6 @@
   -ms-scroll-chaining: none;
       overscroll-behavior: none;
   caret-color: transparent;
-  scroll-behavior: smooth;
 }
 
 *:focus,
