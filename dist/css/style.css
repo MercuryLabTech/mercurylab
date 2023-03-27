@@ -500,6 +500,10 @@
   color: #fff;
 }
 
+.header__link.active {
+  color: #DF972C;
+}
+
 .header__button {
   font-weight: 600;
   font-size: 14px;

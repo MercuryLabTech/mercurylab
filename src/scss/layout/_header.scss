@@ -30,6 +30,9 @@
     }
     &__link{
         color: #fff;
+        &.active{
+            color: #DF972C;
+        }
     }
     &__button{
         font-weight: 600;
