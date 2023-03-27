@@ -11,6 +11,7 @@ import * as animation from "./modules/animations.js";
 // components
 import * as footer from "./components/footer.js";
 import * as popup from "./components/popup.js";
+import * as reviews from "./components/reviews.js"
 
 // modules
 functions.isWebp();
@@ -21,6 +22,7 @@ telegramSend.init();
 // components
 footer.init();
 popup.init();
+reviews.init();
 
 $(document).ready(function() {
     $(".accordion > .accordion__button").on("click", function() {
@@ -40,12 +42,6 @@ $(document).ready(function() {
     });
 });
 
-function pageTransition() {
-    var tl = gsap.timeline();
-    tl.to('.transition li', {duration: .5, scaleY: 1, transformOrigin: "bottom left", stagger: .2})
-    tl.to('.transition li', {duration: .5, scaleY: 0, transformOrigin: "bottom left", stagger: .1, delay: .1})
-}
-
 function delay(n) {
     n = n || 2000;
     return new Promise(done => {
@@ -60,15 +56,20 @@ barba.init({
     transitions: [{
         async leave(data) {
             const done = this.async();
-            pageTransition();
+            document.querySelector('.transition li').classList.add('leave');
             await delay(1200);
             done();
         },
         async enter(data) {
-
+            const done = this.async();
+            document.querySelector('.transition li').classList.remove('leave');
+            document.querySelector('.transition li').classList.add('enter');
+            done();
+            await delay(1000);
+            document.querySelector('.transition li').classList.remove('enter');
         },
         async once(data) {
-
+            // gsap.to('.transition li', {duration: 1, clip: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)"})
         },
     }]
 })

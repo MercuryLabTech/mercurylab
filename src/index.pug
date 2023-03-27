@@ -5,9 +5,13 @@ block ceo
 
 block content
     main.main(data-barba="container" data-barba-namespace="home")
+        include components/intro.pug 
+        +intro
         include components/capabilities.pug 
         +capabilities
         include components/price.pug 
         +price
+        include components/reviews.pug 
+        +reviews
         include components/morecases.pug 
         +morecases 
