@@ -12,13 +12,24 @@ export function init() {
             ease: "power4",
         })
         anim.pause()
-        el.addEventListener('mouseenter', () => { 
-            t = el;
-            anim.play()
-        })
-        el.addEventListener('mouseleave', () => {
-            t = el;
-            anim.reverse()
-        })
+        if(el.parentElement.classList.contains('btn-anim-wrap')){
+            el.parentElement.addEventListener('mouseenter', () => { 
+                t = el;
+                anim.play()
+            })
+            el.parentElement.addEventListener('mouseleave', () => {
+                t = el;
+                anim.reverse()
+            })
+        } else {
+            el.addEventListener('mouseenter', () => { 
+                t = el;
+                anim.play()
+            })
+            el.addEventListener('mouseleave', () => {
+                t = el;
+                anim.reverse()
+            })
+        }
     })
 }
