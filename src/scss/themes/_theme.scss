@@ -23,6 +23,9 @@
 html, body{
     height: 100%; 
 } 
+.sf{
+    font-family: var(--font-2);
+}
 .transition{
     display: flex;
     position: fixed;

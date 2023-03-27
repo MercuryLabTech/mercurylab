@@ -534,8 +534,10 @@
   color: #FFFFFF;
 }
 
+.no-webp .footer {
+  background-image: url("../../img/noise-black.png"); }
+
 .footer {
-  background-image: url(../../img/noise-black.webp);
   background-size: cover;
   background-repeat: repeat;
 }
@@ -910,17 +912,15 @@
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 18px;
   text-align: center;
   text-transform: uppercase;
   position: relative;
   top: 2px;
 }
 
-.no-webp .price {
-  background-image: url("../../img/noise-white.png"); }
-
 .price {
+  background-image: url("../../img/noise-white.webp");
   background-size: cover;
   background-repeat: repeat;
   padding-top: 100px;
@@ -937,7 +937,6 @@
 }
 
 .price__title {
-  font-family: var(--font-2);
   font-weight: 700;
   font-size: 64px;
   line-height: 64px;
@@ -1010,7 +1009,6 @@
 }
 
 .price__subtitle {
-  font-family: var(--font-2);
   font-weight: 700;
   font-size: 36px;
   line-height: 43px;
@@ -1099,10 +1097,6 @@
   margin-right: auto;
 }
 
-.price__btn span {
-  font-family: var(--font-2);
-}
-
 .thanks-popup {
   position: fixed;
   top: 0;
@@ -1188,7 +1182,6 @@
 }
 
 .capabilities__title {
-  font-family: var(--font-2);
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
@@ -1238,7 +1231,6 @@
 
 .capabilities .accordion__button {
   color: #fff;
-  font-family: var(--font-2);
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -1526,6 +1518,10 @@ body {
   height: 100%;
 }
 
+.sf {
+  font-family: var(--font-2);
+}
+
 .transition {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1669,7 +1665,7 @@ ul {
   }
 }
 
-.webp .price { background-image: url(../../img/noise-white.webp); }
+.webp .footer { background-image: url(../../img/noise-black.webp); }
 
 .webp .capabilities { background-image: url(../../img/noise-black.webp); }
 
